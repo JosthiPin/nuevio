@@ -1,0 +1,158 @@
+:root{
+    --oscuro:#07070A;
+    --azulOscuro:#0A1128;
+    --AZULClaro:#006FE6;
+    --blanco:#FEFCFB;
+}
+html{
+    box-sizing: border-box;
+font-size: 62.5%;}
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+
+body{
+    font-size: 1.8rem;
+}
+.ocultar{
+    display: none;
+}
+.bordes{
+    border: 2px solid var(--AZULClaro);
+    color: var(--azulOscuro);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.bordes:hover{
+    background-color: #af0a78;
+    color: beige;
+}
+.btn:hover{
+    cursor: pointer;
+
+}
+.azul{
+    background-color: #e60058;
+}
+@keyframes desplazamiento{
+    /*desplazamiento inicial*/
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.pagina{
+    background-image: url("stile.jpg");
+
+    height: 90vh;
+    min-height: 60rem;
+background-size: cover;
+background-position: center center;
+}
+.logo h2{
+    font-size: 3rem;
+}
+.logo h2 span{
+    color: rgb(155, 56, 133);
+}
+.conte{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(221, 146, 211);
+    box-shadow:10px 10px 16px -6px rgba(187, 43, 43, 0.45) ;
+}
+.navegacion{
+    background-color: #a81294;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    animation: desplazamiento .5s ease-in-out ;
+@media (min-width::768px){
+    .ocultar{
+        display:inline
+    }
+}
+}
+.navegacion a{
+    display: block;
+    font-size: 2rem;
+    padding: 1.1rem;
+    color: #FEFCFB;
+text-decoration: none;
+transition: a 3s;}
+
+.navegacion a:hover{
+    background-color: rgb(11, 15, 17);
+    color: #FEFCFB;
+}
+
+
+    @media(min-width: 768px){
+        .navegacion a{
+            display: inline;
+        }
+    @media(min-width: 768px){
+        .navegacion{
+            position: relative;
+            top: unset;
+            width: auto;
+            background-color: unset;
+            
+        }
+    }
+    }
+
+
+.cris span{
+    width: 5rem;
+    height: 1rem;
+    border: 1px solid white;
+    background-color: rgb(8, 9, 12);
+    display: block;
+    @media (min-width:768px){
+        .cris{
+            display:none;
+        }
+    }
+}
+.texto-pagina h1{
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue ;
+    padding-top: 4rem;
+}
+.formulario-pagina{
+    background-color: #af0a78;
+    border-radius: 1rem;
+}
+    /*seccion sobre nosotros*/
+.nosotros h2{
+    text-align: center;
+    font-size: 4rem;
+    color: #006FE6;}
+
+    @media(min-width: 768px){
+.nosotros h2{
+    font-size: 5rem;
+    text-align: center;
+}
+    }
+    .contenido-nosotros{
+        background-color: lightpink;
+        text-align: center;
+
+    }
+.texto-nosotros h3{
+    color: aquamarine;
+    text-align: center;
+
+}
+.texto-nosotros p{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
